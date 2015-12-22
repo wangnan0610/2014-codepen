@@ -1,0 +1,76 @@
+<!--
+http://codepen.io/jexordexan/pen/yyYEJa
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+    .container {
+      width: 93%;
+      max-width: 350px;
+      text-align: center;
+      margin: 10% auto;
+      padding: 30px 0;
+      background: #111;
+      color: #EEE;
+      border-radius: 5px;
+      border: thin solid #444;
+      overflow: hidden;
+    }
+    input.star {
+      display: none;
+    }
+    label.star:before {
+      content: '\f006';
+      font-family: FontAwesome;
+    }
+    input.star:checked ~ label.star:before {
+      content: '\f005';
+      color: #FD4;
+    }
+    input.star-1:checked ~ label.star:before {
+      color: #F62;
+    }
+    input.star-5:checked ~ label.star:before {
+      color: #FE7;
+      text-shadow: 0 0 20px #952;
+    }
+    label.star {
+      float: right;
+      font-size: 30px;
+      padding: 10px;
+      transition: all .2s;
+    }
+    label.star:hover {
+      transform: rotate(-15deg) scale(1.3);
+    }
+    .stars {
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="stars">
+      <form action="">
+        <input type="radio" class="star star-5" id="star-5" name="star"/>
+        <label for="star-5" class="star star-5"></label>
+        <input type="radio" class="star star-4" id="star-4" name="star"/>
+        <label for="star-4" class="star star-4"></label>
+        <input type="radio" class="star star-3" id="star-3" name="star"/>
+        <label for="star-3" class="star star-3"></label>
+        <input type="radio" class="star star-2" id="star-2" name="star"/>
+        <label for="star-2" class="star star-2"></label>
+        <input type="radio" class="star star-1" id="star-1" name="star"/>
+        <label for="star-1" class="star star-1"></label>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

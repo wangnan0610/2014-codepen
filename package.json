@@ -1,0 +1,19 @@
+{
+  "name": "2014-codepen",
+  "version": "1.0.0",
+  "description": "Top pens of 2014 http://codepen.io/2014/popular/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangnan0610/2014-codepen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangnan0610/2014-codepen/issues"
+  },
+  "homepage": "https://github.com/wangnan0610/2014-codepen#readme"
+}
