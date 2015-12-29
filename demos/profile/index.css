@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/crossword.png');
+}
+#profile {
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0.9;
+  -webkit-filter: grayscale(0.7);
+  -moz-filter: grayscale(0.7);
+  -ms-filter: grayscale(0.7);
+  filter: grayscale(0.7);
+}
+#profile:before {
+  content: '';
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: -5px;
+  left: -5px;
+  border: 1px solid #BCBCBC;
+  border-radius: 50%;
+}
+#profile:after {
+  content: '';
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border: 1px dashed #81BDA4;
+  border-radius: 50%;
+  top: -10px;
+  left: -10px;
+}
+#profile span {
+  position: absolute;
+  font-size: 20px;
+  width: 120px;
+  line-height: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+#profile:hover img {
+  opacity: 0.5;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+#profile:hover span {
+  visibility: visible;
+  color: #494E52;
+  background: rgba(217, 217, 217, 0.52);
+}
